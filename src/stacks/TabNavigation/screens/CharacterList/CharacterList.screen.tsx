@@ -29,7 +29,7 @@ const CharacterListScreen = () => {
   }>({status: '', species: ''});
   const {navigate} = useNavigation<MainStackNavigationProp>();
   const nameSearch = useDebounce(searchValue, 500);
-  const cacheKey = `${nameSearch}${selectedOptions.status}${selectedOptions.species}`;
+  const cacheKey = `${nameSearch}status${selectedOptions.status}species${selectedOptions.species}`;
   const {
     data,
     isLoading,
